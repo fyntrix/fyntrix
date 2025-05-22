@@ -27,12 +27,6 @@ targets = ['console']
 [logger.levels]
 # Log levels for specific subsystems/components
 _rest = 'info'
-_rest_admin = 'info'
-_interactor = 'warn'
-_database = 'warn'
-_cache = 'warn'
-_telegram_bot = 'warn'
-_matrix = 'warn'
-_payment_gateway = 'warn'
-_migration = 'info'
+_image = 'warn'
+_video = 'warn'
 default = 'info'
