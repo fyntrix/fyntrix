@@ -1,0 +1,38 @@
+development = true
+
+[image.vips]
+concurrent_level = 1
+max_cache_mem = 134217728     # 128MB
+max_cache_size = 1000         # max number of operations in cache
+max_cache_files = 10          # max number of files
+report_leaks = false
+cache_trace = false
+
+[logger]
+# Use colored log output
+colorful = true
+
+# Max number of rotated log files to keep (0 = unlimited)
+max_backups = 0
+
+# Number of days after which logs are rotated
+rotate_log_after_days = 1
+
+# Compress rotated logs
+compress = true
+
+# Logging targets (e.g., "console", "file")
+targets = ['console']
+
+[logger.levels]
+# Log levels for specific subsystems/components
+_rest = 'info'
+_rest_admin = 'info'
+_interactor = 'warn'
+_database = 'warn'
+_cache = 'warn'
+_telegram_bot = 'warn'
+_matrix = 'warn'
+_payment_gateway = 'warn'
+_migration = 'info'
+default = 'info'
