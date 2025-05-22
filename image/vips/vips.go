@@ -10,10 +10,11 @@ import "C"
 import (
 	"errors"
 	"fmt"
-	"github.com/fyntrix/fyntrix/pkg/logger"
 	"runtime"
 	"sync"
 	"unsafe"
+
+	"github.com/fyntrix/fyntrix/pkg/logger"
 )
 
 var (
