@@ -33,6 +33,8 @@ jobs:
             proto
             rest
             html
+            image
+            video
           # Configure that a scope must always be provided.
           requireScope: true
           # The subject should not start with an uppercase character and should not end with a period.
