@@ -30,6 +30,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Restore APT cache
+        uses: actions/cache@v4
+        with:
+          path: /var/cache/apt/archives
+          key: apt-cache-v1
+
+      - name: Install libvips and pkg-config
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libvips-dev pkg-config
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:

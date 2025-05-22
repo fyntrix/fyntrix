@@ -1,10 +1,10 @@
 unit_test:
 	@echo "Running unit tests..."
-	@go test ./...
+	@go test -v ./...
 
 race_test:
 	@echo "Running race condition tests..."
-	@go test ./... -race
+	@go test -v ./... -race
 
 fmt:
 	@echo "Formatting code..."
@@ -12,7 +12,7 @@ fmt:
 
 lint:
 	@echo "Running lint..."
-	@go tool golangci-lint  run ./... --timeout=20m0s
+	@go tool golangci-lint run ./... --timeout=20m0s
 
 check: fmt lint
 
