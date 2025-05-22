@@ -16,6 +16,11 @@ jobs:
         with:
           go-version: "1.24.3"
 
+      - name: Install libvips and pkg-config
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libvips-dev pkg-config
+
       - name: Checkout code
         uses: actions/checkout@v4
 
