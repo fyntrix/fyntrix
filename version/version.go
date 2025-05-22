@@ -10,7 +10,7 @@ var Version = Ver{
 	Patch: 0,
 }
 
-// Ver defines the version of artogenia software.
+// Ver defines the version of fyntrix software.
 // It follows the semantic versioning 2.0.0 spec (http://semver.org/).
 type Ver struct {
 	Major uint // Major version number
