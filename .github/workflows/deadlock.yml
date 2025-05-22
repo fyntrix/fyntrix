@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Test with data race detection
-        run: make test_race
+        run: make race_test
 
       - name: Replace sync.RWMutex with deadlock.RWMutex
         run: find . -type f -name "*.go" -not -path '*/\.*' -exec sed -i -- 's/\t"sync"/\tsync "github.com\/sasha-s\/go-deadlock"/g' {} +
