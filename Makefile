@@ -18,3 +18,9 @@ check: fmt lint
 
 .PHONY: test unit_test race_test
 .PHONY: fmt lint check
+
+build:
+	@echo "Building fyntrix..."
+	@go build -o ./build/fyntrix ./cmd/fyntrix
+
+.PHONY: build

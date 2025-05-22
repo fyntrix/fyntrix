@@ -1,1 +1,7 @@
-package fyntrix
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("fyntrix...")
+}
