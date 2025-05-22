@@ -35,7 +35,7 @@ func startCMD(root *cobra.Command) *cobra.Command {
 			_ = vip.Close()
 		}()
 
-		fmt.Printf("vips initlized: %v\n", vip.Inited())
+		fmt.Printf("vips initialized: %v\n", vip.Inited())
 		fmt.Println(vip.Version())
 
 		return nil
